@@ -3,10 +3,10 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 
-app.use(express.static(__dirname + 'docs'));
+app.use(express.static(__dirname + '/dist/localization-angular'));
 
 app.get('/*', (req, res) => {
-    res.sendFile(__dirname + 'docs/index.html');
+    res.sendFile(__dirname + '/dist/localization-angular/index.html');
 });
 
 app.listen(PORT, () => {
