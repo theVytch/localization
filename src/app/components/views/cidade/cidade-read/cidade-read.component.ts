@@ -47,6 +47,6 @@ export class CidadeReadComponent implements OnInit {
   }
 
   aviso(): void{
-    this.service.mensagem('Será implementado aqui os pontos turísticos de cada cidade, agurade!')
+    this.service.mensagem('Será implementado aqui os pontos turísticos de cada cidade, aguarde!')
   }
 }
