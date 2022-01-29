@@ -33,7 +33,7 @@
         <ng-container matColumnDef="detalhes">
           <th mat-header-cell *matHeaderCellDef> Turismo </th>
           <td mat-cell *matCellDef="let row"> 
-            <a class="detalhes" routerLink="{{ row.id }}/read">
+            <a class="detalhes" (click)="aviso()" routerLink="{{ row.id }}/read">
               <i class="material-icons">beach_access</i>
             </a>  
           </td>

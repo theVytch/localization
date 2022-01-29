@@ -43,6 +43,10 @@ export class CidadeReadComponent implements OnInit {
     }
 
   voltar(): void {
-      this.router.navigate([`estados/${this.id_est}/cidades`])
+      this.router.navigate([`estados`])
+  }
+
+  aviso(): void{
+    this.service.mensagem('Será implementado aqui os pontos turísticos de cada cidade, agurade!')
   }
 }
